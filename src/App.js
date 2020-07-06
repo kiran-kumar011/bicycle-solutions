@@ -1,12 +1,21 @@
 import React from 'react';
-import './App.css';
+import { Router } from '@reach/router';
+import './App.scss';
 
-// const check = 0;
+// views
+import Header from './containers/NavBar';
+import Home from './containers/Home';
 
 function App() {
   return (
     <div>
-      <h1>My React App</h1>
+      <div className="hero" />
+      <header>
+        <Header />
+      </header>
+      <Router>
+        <Home path="/" />
+      </Router>
     </div>
   );
 }
