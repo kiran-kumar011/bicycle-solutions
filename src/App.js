@@ -1,24 +1,23 @@
 import React from 'react';
 import { Router } from '@reach/router';
 
+import Home from './containers/home/homeContainer';
+import Services from './containers/services';
+
 import './App.scss';
 
-// views
-import Header from './containers/NavBar';
-import Home from './containers/Home';
-
 class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
+
   render() {
     return (
-      <div>
-        <div className="hero" />
-        <header>
-          <Header setHeader={this.handleNavItemAndScroll} />
-        </header>
-        <Router>
-          <Home path="/" />
-        </Router>
-      </div>
+      <Router>
+        <Home path="/" />
+        <Services path="/services" />
+      </Router>
     );
   }
 }

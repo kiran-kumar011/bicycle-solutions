@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-
-// removing default style by eric meyers css reset.
 html,
 body,
 div,
@@ -105,6 +102,7 @@ section {
 }
 body {
   line-height: 1;
+  // overflow: hidden;
 }
 ol,
 ul {
@@ -126,124 +124,22 @@ table {
   border-spacing: 0;
 }
 
-// main body styling starts here
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-}
-
-:root {
-  font-size: 20px;
-}
-
 a {
-  color: #fff;
+  color: #0060b6;
   text-decoration: none;
-  font-family: 'Abel', sans-serif;
 }
 
-.hero {
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+a:hover {
+  color: #00a0c6;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.hero::before {
-  content: '';
-  background-image: url('https://bicyclesolutions.in/wp-content/uploads/2020/05/BicycleSolutions_Banner.jpg');
-  // background-size: 100vw 100vh;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.7;
-  padding: 10px;
-}
-
-// header styling
-.relative {
-  position: relative;
-}
-
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.flex-center-space-between {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.absolute {
-  position: absolute;
-}
-
-.navbar-container {
-  padding: 5px 20px;
-  .navbar-wrapper {
-    width: 100%;
-    .navItems {
-      .navItems-wrapper {
-      }
-    }
-    .menu {
-      display: none;
-    }
-  }
-}
-
-.containers {
-  height: 600px;
-}
-
-// media queries
-@media screen and (max-width: 1025px) {
-  :root {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  :root {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  :root {
-    font-size: 15px;
-  }
-  .navbar-container {
-    background-color: #fff;
-    padding: 5px 10px;
-    .navItems {
-      display: none;
-    }
-    .navbar-wrapper {
-      .menu {
-        display: inline;
-        background-color: red;
-        padding: 5px 10px 3px 10px;
-        border-radius: 5px;
-        .menu-item {
-          color: rgba(0, 0, 0, 0.4);
-          width: 100vw;
-          text-align: center;
-          box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
-        }
-      }
-    }
-  }
-
-  .hero::before {
-    background-size: 100vw 100vh;
-  }
+.home_container {
+  background-image: url('./assets/images/bg.jpg');
+  background-repeat: no-repeat, repeat;
+  // background-position: 0px 0px;
+  background-size: cover;
+  height: 95vh;
+  width: 100vw;
 }
