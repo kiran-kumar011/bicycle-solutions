@@ -1,0 +1,99 @@
+{
+  "services": [
+    {
+      "title": "Regular Service",
+      "cost": 700,
+      "description": "Recommended for Occasional Riders.  A quick tune-up which covers all the basic checks to keep you on the move !",
+      "note": "Our technician will drop-in and service your bicycle.",
+      "note2": "What all is done ?",
+      "list": [
+        {
+          "title": "All bolts checked and torqued",
+          "note": "According to manufacturer standards"
+        },
+        {
+          "title": "Wheel truing"
+        },
+        {
+          "title": "Gear tune-up"
+        },
+        {
+          "title": "Break adjustment"
+        },
+        {
+          "title": "Bottom bracket check"
+        },
+        {
+          "title": "Chain lubrication"
+        },
+        {
+          "title": "Headset check-up / adjust"
+        },
+        {
+          "title": "Hanger allignment"
+        },
+        {
+          "title": "Tire Inspection and pressure"
+        },
+        {
+          "title": "Clean up of the bike"
+        }
+      ]
+    },
+    {
+      "title": "Premium Service",
+      "cost": 1300,
+      "description": "Recommended for Regular Riders. Get your bike looking new and running smooth ! 6 months once would be an ideal time.",
+      "note": "We pick-up your bike, Service it and drop it back in mint condition. Pickup and drop charges included.",
+      "note2": "This Service include's all elements of Regular Service",
+      "list": [
+        {
+          "title": "Full frame and fork clean"
+        },
+        {
+          "title": "De-greasing the drive train"
+        },
+        {
+          "title": "Lubrication of the drive train"
+        },
+        {
+          "title": "Hub greasing & adjusting"
+        },
+        {
+          "title": "Polishing the frame/tyres"
+        }
+      ]
+    },
+    {
+      "title": "Ultimate Strip",
+      "cost": 1800,
+      "description": "Recommended for a Rider who keeps his wheels moving all the time, this strip down makes sure you're bike bearings are running smooth. If you race often or if you go on endurance rides, this is the service you should consider. Getting the Ultimate strip yearly once is recommended",
+      "note": "We pick-up your bike, Service it and drop it back in mint condition. Pickup and drop charges included.",
+      "note2": "This includes all elements of Premium service plus",
+      "list": [
+        {
+          "title": "All parts fully removed from the frame and cleaned"
+        },
+        {
+          "title": "Hub service - strip, clean and re-greased"
+        },
+        {
+          "title": "Bottom bracket service & thread cleaned"
+        },
+        {
+          "title": "Headset checked and re-greased"
+        },
+        {
+          "title": "Removal and deep clean of",
+          "items": [
+            "Chain, cassette, crank",
+            "Front and Rear (deraillier)",
+            "Brake Calipers",
+            "Wheels and rotor (disc)"
+          ]
+        },
+        { "title": "Anti-seize grease will be applied." }
+      ]
+    }
+  ]
+}

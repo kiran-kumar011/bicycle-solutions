@@ -138,8 +138,8 @@ a:hover {
 .home_container {
   background-image: url('./assets/images/bg.jpg');
   background-repeat: no-repeat, repeat;
-  // background-position: 0px 0px;
-  background-size: cover;
+  background-size: 100vw 95vh;
   height: 95vh;
   width: 100vw;
+  margin: 0 auto;
 }
