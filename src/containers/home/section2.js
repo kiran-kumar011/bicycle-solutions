@@ -2,23 +2,13 @@ import React from 'react';
 import data from './data.json';
 import ServiceCard from './serviceCard';
 
-const Section2 = ({}) => {
+const Section2 = () => {
   return (
-    <div
-      style={{
-        backgroundColor: 'rgba(48,48, 48,1)',
-        display: 'flex',
-        justifyContent: 'center',
-        boxSizing: 'border-box',
-        // padding: '20px',
-        height: '100vh',
-      }}
-    >
+    <div className="service_card_container">
       <div
         style={{
           display: 'flex',
-          width: '80%',
-          // backgroundColor: 'red',
+          width: '85%',
           justifyContent: 'space-between',
           alignItems: 'center',
         }}

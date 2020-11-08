@@ -3,28 +3,12 @@ import { FaCaretRight } from 'react-icons/fa';
 
 const ServiceCard = ({ title, cost, description, note, note2, list }) => {
   return (
-    <div
-      style={{
-        backgroundColor: '#fff',
-        width: '27%',
-      }}
-    >
-      <div
-        style={{
-          height: '80vh',
-          paddingBottom: '20px',
-        }}
-      >
-        <div
-          style={{
-            width: '100%',
-            boxSizing: 'border-box',
-            fontSize: '14px',
-          }}
-        >
+    <div className="service_card_wrapper">
+      <div className="service_card_wrapper1">
+        <div>
           <div
             style={{
-              backgroundColor: 'red',
+              backgroundColor: 'rgba(255,0,0,0.9)',
               width: '100%',
               padding: '10px',
               boxSizing: 'border-box',
@@ -35,21 +19,14 @@ const ServiceCard = ({ title, cost, description, note, note2, list }) => {
               {title.toUpperCase()}
             </h3>
           </div>
-          <div style={{ padding: '10px 20px 10px 20px' }}>
-            <div style={{ textAlign: 'center' }}>
-              <h3
-                style={{
-                  fontSize: '20px',
-                  fontWeight: 'bold',
-                }}
-              >
-                {cost} /-*
-              </h3>
+          <div style={{ padding: '4% 8% 4% 8%' }}>
+            <div className="service_charge">
+              <h3>{cost} /-*</h3>
             </div>
             <div
               style={{
                 padding: '10px 0 10px 0',
-                color: 'rgba(0,0,0,0.8)',
+                color: 'rgba(0,0,0,0.7)',
                 lineHeight: '17px',
                 letterSpacing: '0.1px',
               }}
@@ -59,14 +36,7 @@ const ServiceCard = ({ title, cost, description, note, note2, list }) => {
             <div style={{ padding: '10px 0 10px 0', color: 'rgba(0,0,0,0.8)' }}>
               <p>{note}</p>
             </div>
-            <div
-              style={{
-                padding: '10px 0 10px 0',
-                color: 'rgba(0,0,0,0.8)',
-                fontWeight: 'bold',
-                fontStyle: 'italic',
-              }}
-            >
+            <div className="service_intro">
               <p>{note2}</p>
             </div>
             <div style={{ fontStyle: 'italic', letterSpacing: '0.1px' }}>
@@ -82,11 +52,11 @@ const ServiceCard = ({ title, cost, description, note, note2, list }) => {
                     key={item.title + ind}
                   >
                     <div style={{ position: 'relative', paddingRight: '10px' }}>
-                      <FaCaretRight color="rgba(233, 30,99,1)" size={15} />
+                      <FaCaretRight color="rgba(255,0,0,0.9)" size={15} />
                       <div
-                        style={{ position: 'absolute', top: '0', left: '20%' }}
+                        style={{ position: 'absolute', top: '0', left: '15%' }}
                       >
-                        <FaCaretRight color="rgba(233, 30,99,0.41)" size={15} />
+                        <FaCaretRight color="rgba(255,0,0,0.5)" size={15} />
                       </div>
                     </div>
                     <p>{item.title}</p>
@@ -100,14 +70,13 @@ const ServiceCard = ({ title, cost, description, note, note2, list }) => {
       <div
         style={{
           textAlign: 'center',
-          backgroundColor: 'rgba(0,0,0,0.1)',
+          backgroundColor: 'rgba(0,0,0,0.2)',
           padding: '10px',
-          fontSize: '20px',
-          fontWeight: 'bold',
+          fontSize: '16px',
           cursor: 'pointer',
         }}
       >
-        <h3>Book a service</h3>
+        <h3>BOOK SERVICE</h3>
       </div>
     </div>
   );

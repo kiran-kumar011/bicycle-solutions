@@ -6,6 +6,8 @@ import Header from '../../components/header';
 import Header2 from '../../components/header/header2';
 import Section1 from './section1';
 import Section2 from './section2';
+import Section3 from './section3';
+import Section4 from './section4';
 
 class Home extends Component {
   constructor(props) {
@@ -81,6 +83,8 @@ class Home extends Component {
         </div>
         <Section1 />
         <Section2 />
+        <Section3 />
+        <Section4 />
       </div>
     );
   }

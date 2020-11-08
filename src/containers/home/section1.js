@@ -26,7 +26,7 @@ const Section1 = ({}) => {
           height: '90vh',
           width: '90vw',
           position: 'absolute',
-          top: '-4%',
+          top: '-5%',
           boxShadow: '0 0 4px 4px rgba(0,0,0,0.2)',
           display: 'flex',
           alignItems: 'center',
@@ -220,12 +220,9 @@ const Section1 = ({}) => {
       </div>
       <div
         style={{
-          // position: 'absolute',
-          // backgroundColor: 'red',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'flex-end',
-          // top: '170%',
           width: '100%',
           padding: '10px',
         }}
@@ -236,7 +233,6 @@ const Section1 = ({}) => {
             alignItems: 'center',
             justifyContent: 'center',
             paddingBottom: '16px',
-            // backgroundColor: 'red',
           }}
         >
           <div
